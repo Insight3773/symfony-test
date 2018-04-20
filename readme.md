@@ -18,6 +18,6 @@
 * Запустить контейнеры `cd laradock; docker-compose up -d workspace nginx` 
 * Войти в контейнер workspace `docker-compose exec --user=laradock workspace bash`
 * Выполнить `composer install && npm install`
-* Выполнить сборку js/css `npm run build`
+* Выполнить сборку js/css `gulp`
 
 * По умолчанию проект доступен на **http://localhost**
