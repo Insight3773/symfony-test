@@ -45,7 +45,7 @@ gulp.task("bundle", ["browserify", 'sass'], function() {
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(concat("app.js"))
         .pipe(sourcemaps.write("./"))
-        .pipe(gulp.dest("dist"));
+        .pipe(gulp.dest("public/dist"));
 });
 
 gulp.task('default', ['bundle']);
