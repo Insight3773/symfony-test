@@ -15,7 +15,7 @@
 * После клонирования репозитория выполнить `git submodule init`
 * Подгрузить подмодули репозитория, выполнив `git submodule update`
 * Выполнить `cp samples/laradock-env laradock/.env` и настроить **laradock/.env**
-* Запустить контейнеры `docker-compose up -d workspace nginx` 
+* Запустить контейнеры `cd laradock; docker-compose up -d workspace nginx` 
 * Войти в контейнер workspace `docker-compose exec --user=laradock workspace bash`
 * Выполнить `composer install && npm install`
 * Выполнить сборку js/css `npm run build`
